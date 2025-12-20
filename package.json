@@ -8,6 +8,9 @@
     "frontend:lint": "npm --prefix frontend install && npm --prefix frontend run lint",
     "backend": "./backend/scripts/run.sh"
   },
+  "dependencies": {
+    "uuid": "^9.0.0"
+  },
   "devDependencies": {
     "concurrently": "^9.1.2"
   }
