@@ -1,18 +1,15 @@
 {
   "name": "managed-chatkit",
   "private": true,
+  "type": "module",
   "scripts": {
-    "dev": "concurrently --kill-others-on-fail --names backend,frontend \"npm run backend\" \"npm run frontend\"",
+    "dev": "npm run frontend",
+    "api:dev": "node api/local-server.js",
     "frontend": "npm --prefix frontend install && npm --prefix frontend run dev",
     "frontend:build": "npm --prefix frontend install && npm --prefix frontend run build",
-    "frontend:lint": "npm --prefix frontend install && npm --prefix frontend run lint",
-    "backend": "./backend/scripts/run.sh"
+    "frontend:lint": "npm --prefix frontend install && npm --prefix frontend run lint"
   },
   "dependencies": {
-    "uuid": "^9.0.0"
-  },
-  "devDependencies": {
-    "concurrently": "^9.1.2"
+    "@openai/agents": "^0.11.6"
   }
 }
-

@@ -39,3 +39,4 @@ yarn-error.log*g
 # typescript
 *.tsbuildinfog
 /backend/.ruff_cache
+.vercel
